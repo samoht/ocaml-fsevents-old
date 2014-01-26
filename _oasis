@@ -1,0 +1,19 @@
+OASISFormat: 0.3
+Name:        fsevents
+Version:     0.1.0
+Synopsis:    Ctypes bindings to FSevents
+Authors:     Thomas Gazagnaire
+License:     ISC
+Plugins:     META (0.3), DevFiles (0.3)
+BuildTools:  ocamlbuild
+
+Library fsevents
+  Path:         lib/
+  Findlibname:  fsevents
+  Modules:      Fsevents
+  BuildDepends:	ctypes.foreign
+
+#Test test_git
+#  Run$:               flag(tests)
+#  Command:            $test_git -q
+#  WorkingDirectory:   lib_test/
