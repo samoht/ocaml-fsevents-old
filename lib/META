@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: e3f931ce52fa698ef712301419096527)
+version = "0.1.0"
+description = "Ctypes bindings to FSevents"
+requires = "ctypes.foreign"
+archive(byte) = "fsevents.cma"
+archive(byte, plugin) = "fsevents.cma"
+archive(native) = "fsevents.cmxa"
+archive(native, plugin) = "fsevents.cmxs"
+exists_if = "fsevents.cma"
+# OASIS_STOP
+
